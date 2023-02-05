@@ -11,12 +11,12 @@ from my_framework.utilities.configuration import Configuration
 from my_framework.utilities.driver_factory import DriverFactory
 
 
+
 @pytest.fixture(scope="session")
 def env():
     with open(f'{ROOT_DIR}/configurations/configuration.json') as f:
         data = f.read()
         json_to_dict = json.loads(data)
-
     config = Configuration(**json_to_dict)
     return config
 
@@ -24,7 +24,7 @@ def env():
 @pytest.fixture()
 def create_driver(env):
     driver = DriverFactory.create_driver(env.browser_id)
-    driver.maximize_window()
+    # driver.maximize_window()
     yield driver
     driver.quit()
 
