@@ -1,7 +1,7 @@
 import json
 import pytest
 
-from data.gender import Gender
+from my_framework.data.gender import Gender
 from my_framework.CONSTANTS import ROOT_DIR
 from my_framework.page_objects.community_portal import CommunityPortal
 from my_framework.page_objects.home_page import HomePage
