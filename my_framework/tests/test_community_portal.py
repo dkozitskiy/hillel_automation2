@@ -21,9 +21,9 @@ def test_how_to_help_in_page(open_community_portal):
     assert open_community_portal.is_how_to_help_visible() is True
 
 
-# @pytest.mark.regression
-# def test_assist_and_social_lifein_page(open_community_portal):
-#     assert open_community_portal.is_assist_and_social_life_visible() is True
+@pytest.mark.regression
+def test_assist_and_social_lifein_page(open_community_portal):
+    assert open_community_portal.is_assist_and_social_life_visible() is True
 
 
 @pytest.mark.regression

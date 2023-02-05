@@ -13,7 +13,7 @@ class CommunityPortal(BasePage):
     __menu_container = (By.XPATH, '//div[@id="menu-container"]')
     __lock = (By.XPATH, '//div[@id="menu-container"]')
     __how_to_help = (By.XPATH, '//td[@rowspan="3"]')
-    __assist_and_social_life = (By.XPATH, '//td[@colspan="2"] //h2[@class="ext-discussiontools-init-section"]/..')
+    __assist_and_social_life = (By.XPATH, '//td[@colspan="2"]  //div[@class="mw-heading mw-heading2 ext-discussiontools-init-section"]')
 
     def is_title(self):
         return self._is_title(self.__title)
