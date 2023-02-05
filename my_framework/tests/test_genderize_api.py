@@ -2,8 +2,8 @@ import json
 
 from http import HTTPStatus
 
-from automation_lessons.api_collection.name_api import NameAPI
-from automation_lessons.data.gender import Gender
+from my_framework.api_collection.name_api import NameAPI
+from my_framework.data.gender import Gender
 
 
 def test_get_genderize(env):
